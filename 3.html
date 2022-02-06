@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+</head>
+<body>
+    <h1><a href="index.html">TECH CLOTHING</a></h1>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+           alist[i].style.color = 'powderblue';
+           i = i + 1;
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+           alist[i].style.color = 'blue';
+           i = i + 1;
+      }
+
+    }
+    var Body = {
+      setColor:function (color){
+        document.querySelctor('body').style.color = color;
+      },
+      setBackgroundColor:function (color){
+        document.querySelector('body').style.backgroundColor = color;
+      }
+    }
+
+    ">
+    <ol>
+      <li><a href="1.html">EMOTINAL CLOTHING</a></li>
+      <li><a href="2.html">TERAPHY CLOTHING</a></li>
+      <li><a href="3.html">PHOTOSYNTHESIS CLOTHING</a></li>
+    </ol>
+    <h2>스스로 광합성을 하는 옷</h2>
+    <p><a href="https://egonlab.com/metaverse" target="_blank" title="emotionalclothing">Stellantis 그룹 산하의 DS Automobiles는 프랑스 디자이너 브랜드 EGONLab</a>, 런던 연구 스튜디오 Post Carbon Lab와의 3자 협업을 통해 공기중의 이산화탄소를 산소로 바꾸는 살아있는 조류로 코팅 된 의류 4종을 출시했다 . EGONLab 이 디자인하고 Post Carbon Lab이 개발한 신소재를 사용한 이 캡슐 컬렉션은 봄버 재킷과 트렌치코트, 티셔츠 두 벌이 포함되어있다.
+    <img src="photosynthesis1.jpeg" width="100%"">
+    </p><p style="margin-top:45px;">이 신소재는 스스로 식물과 같은 광합성을 하는데, 이 과정도 녹조 등 미생물이 수행한다. 이를 위해서는 옷이라기 보다는 화초처럼 다뤄야하며, 녹조가 살아있도록 하기 위해서 매일 물과 규칙적으로 햇빛에 노출 해주는 것이 필요하다.
+    "Lead the Charge"와 같은 올캡 슬로건이 새겨져있는 이 컬렉션은 파리 패션위크를 통해 깜짝 발표되었다. 파리 패션위크와 DS 자동차 회사들은 모두 창의적인 의식과 환경을 생각하는 생활이 사람들의 일상에 착용 가능한 옷으로 스며들기를 희망하고 있다.
+</body>
